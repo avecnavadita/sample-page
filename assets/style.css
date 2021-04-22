@@ -116,16 +116,16 @@ div#heading {
     display: flex;
 }
 
-footer ul {
+footer.main ul {
     margin: 4px 20px;
     list-style-type: none;
 }
 
-footer li {
+footer.main li {
     margin: 20px 0px;
 }
 
-footer header {
+footer.main header {
     margin: 0px 60px;
     font-family: 'Roboto', sans-serif;
 }
