@@ -128,10 +128,15 @@ footer.main li {
 footer.main header {
     margin: 0px 60px;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 a.footer-a {
     color: #ababab;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menu {
     font-family: 'Montserrat', sans-serif;
 }
 
