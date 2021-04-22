@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 nav {
     background:#5085ab;
     padding: 1px 10px;
@@ -11,7 +15,9 @@ nav {
 	color: #FFF;
 	height: 45px;
 	padding-left: 18px;
-	/* border-radius: 10px; */
+	margin-left: 10px;
+	border-radius: 10px;
+	align-content: center;
 }
 #menu ul, #menu li {
 	margin: 0 auto;
@@ -114,3 +120,101 @@ nav {
     margin: 0 auto;
 } */
 
+/* html, body {
+	height: 100%;
+	width: 100%;
+} */
+
+body .body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+    height: 100%;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	height: 80px;
+	text-align: center;
+}
+
+header img {
+	width: 34;
+	height: 34;
+}
+
+header h3 {
+	font-weight: 800;
+	font-size: larger;
+	position: relative;
+}
+
+footer{
+	background: #070606;
+	height: 29rem;
+	position: relative;
+}
+
+footer header{
+	color: #ffffff;
+	position: relative;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+footer .main-divs {
+	padding-left: 10%;
+	padding-top: 50px;
+}
+
+footer .main-divs div {
+	margin-right: 5rem;
+}
+
+footer div {
+	display: flex;
+}
+
+footer main {
+	margin-top: 2.5rem;
+	position: absolute;
+}
+
+footer div a {
+	text-decoration: none;
+	color: #898989;
+    display:inline-table;
+    vertical-align:middle;
+    line-height: 2rem;
+	transition: all .3s ease;
+}
+
+footer div a:hover {
+	cursor: pointer;
+	color: #ffffff;
+}
+
+footer .main-divs div {
+	margin-left: 50px;
+}
+
+footer div img {
+	height: 10rem;
+	width: 25rem;
+	padding-left: 80px;
+	padding-right: 10px;
+	margin-right: 20px;
+}
+
+footer .end {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+footer .end p {
+	color: #ffffff;
+	padding-top: 4rem;
+	padding-left: 50%;
+}
