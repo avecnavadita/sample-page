@@ -10,6 +10,18 @@ h2 {
     font-family: 'Poppins', sans-serif;
 }
 
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    margin-top: 2px;
+    color: black;
+}
+
+img {
+    height: 37px;
+    padding: 0px 10px;
+}
+
 p {
     text-align: justify;
     font-size: 20px;
@@ -81,4 +93,63 @@ main.main-intro2 {
 
 div#points {
     width: 650px;
+}
+
+div#heading {
+    display: flex;
+    margin-right: 400px;
+}
+
+.header {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 105px;
+}
+
+#menu a {
+    color: black;
+    background: white;
+    font-size: 15px;
+}
+
+nav#menu {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menu li a:hover {
+    color: black;
+}
+
+footer {
+    background: black;
+    height: 400px;
+    padding: 70px;
+}
+
+li {
+    margin: 20px 0px;
+}
+
+header {
+    color: #fff;
+}
+
+.main-divs {
+    display: flex;
+}
+
+ul {
+    margin: 4px 20px;
+    list-style-type: none;
+}
+
+footer header {
+    margin: 0px 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a.footer-a {
+    color: #ababab;
+    font-family: 'Montserrat', sans-serif;
 }
