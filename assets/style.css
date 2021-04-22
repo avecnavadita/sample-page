@@ -17,6 +17,12 @@ h3 {
     color: black;
 }
 
+footer.main {
+    background: black;
+    height: 400px;
+    padding: 70px;
+}
+
 img {
     height: 37px;
     padding: 0px 10px;
@@ -106,31 +112,6 @@ div#heading {
     padding-bottom: 105px;
 }
 
-#menu a {
-    color: black;
-    background: white;
-    font-size: 15px;
-}
-
-nav#menu {
-    background: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#menu li a:hover {
-    color: black;
-}
-
-footer {
-    background: black;
-    height: 400px;
-    padding: 70px;
-}
-
-header {
-    color: #fff;
-}
-
 .main-divs {
     display: flex;
 }
@@ -153,3 +134,4 @@ a.footer-a {
     color: #ababab;
     font-family: 'Montserrat', sans-serif;
 }
+
