@@ -2,38 +2,137 @@
     <head>
         <link rel="stylesheet" href="assets/style.css">
         <!-- <script src="assets/script.js"></script> -->
-        <title>IT Staffing</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <title>IT Staffing</title>
+
+        <style>
+
+            img {
+                height: 37px;
+                padding: 0px 10px;
+            }
+
+            h3 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 26px;
+                margin-top: 2px;
+            }
+
+            div#heading {
+                display: flex;
+                margin-right: 400px;
+            }
+
+            .header {
+                display: flex;
+                padding-top: 30px;
+                padding-bottom: 105px;
+            }
+
+            #menu a {
+                color: black;
+                background: white;
+                font-size: 15px;
+            }
+
+            nav#menu {
+                background: white;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            #menu li a:hover {
+                color: black;
+            }
+
+            footer {
+                background: black;
+                height: 400px;
+                padding: 70px;
+            }
+
+            li {
+                margin: 20px 0px;
+            }
+
+            header {
+                color: #fff;
+            }
+
+            .main-divs {
+                display: flex;
+            }
+
+            ul {
+                margin: 4px 20px;
+                list-style-type: none;
+            }
+
+            footer header {
+                margin: 0px 60px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            a.footer-a {
+                color: #ababab;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+        </style>
     </head>
 
     <body>
         <div id="container">
+
             <header>
-                <div id="heading">
-                    <img src="assets/kompitech.jpg">
-                    <h3>KompiTech</h3>
+                
+                <div class="header">
+
+                    <div id="heading">
+                        <img src="assets/kompitech.jpg">
+                        <h3>  KompiTech</h3>
+                    </div>
+
+                    <nav id='menu'>
+
+                        <ul> 
+
+                            <li>
+                                <a class='dropdown-arrow' href='#'>Ad-Hoc Support</a>
+
+                                <ul class='sub-menus'>
+                                    <li><a href="#overview">Overview</a></li>
+                                    <li><a href="#g-f-e">Global Field Engineers</a></li>
+                                    <li><a href="#e-u-it-s">End-User IT Support</a></li>
+                                    <li><a href="#d-i-f-s">Datacenter Infrastructure Field Support</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                <a class='dropdown-arrow' href='#'>Managed Services</a>
+
+                                <ul class='sub-menus'>
+
+                                    <li><a href="#it-s">IT Staffing</a></li>
+                                    <li><a href="#d-w">Digital Workplace</a></li>
+                                    <li><a href="#it-i-m">IT Infrastructure Management</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a class='dropdown' href='#'>Vendors Management</a></li>
+
+                        </ul>
+
+                    </nav>
+
                 </div>
 
-                <nav id='menu'>
-                    <ul> 
-                        <li><a class='dropdown-arrow' href='#'>Ad-Hoc Support</a>
-                            <ul class='sub-menus'>
-                                <li><a href="#overview">Overview</a></li>
-                                <li><a href="#g-f-e">Global Field Engineers</a></li>
-                                <li><a href="#e-u-it-s">End-User IT Support</a></li>
-                                <li><a href="#d-i-f-s">Datacenter Infrastructure Field Support</a></li>
-                            </ul>
-                        </li>
-                        <li><a class='dropdown-arrow' href='#'>Managed Services</a>
-                            <ul class='sub-menus'>
-                                <li><a href="#it-s">IT Staffing</a></li>
-                                <li><a href="#d-w">Digital Workplace</a></li>
-                                <li><a href="#it-i-m">IT Infrastructure Management</a></li>
-                            </ul>
-                        </li>
-                        <li><a class='dropdown' href='#'>Vendors Management</a></li>
-                    </ul>
-                </nav>
             </header>
 
             <main>
@@ -283,51 +382,63 @@
 
             <footer>
                 <div class="main-divs">
+
                     <div class="Platform">
+
                         <header>Platform</header>
-                        <main>
-                            <a class="footer-a" href="#">Pricing</a>
-                            <a class="footer-a" href="#">Free Trial</a>
-                        </main>
+                        <ul>
+                            <li><a class="footer-a" href="#">Pricing</a></li>
+                            <li><a class="footer-a" href="#">Free Trial</a></li>
+                        </ul>
+
                     </div>
 
                     <div class="support">
+
                         <header>Ad-Hoc Support</header>
-                        <main>
-                            <a class="footer-a" href="#">End-User IT Support</a>
-                            <a class="footer-a" href="#">Global Field Technicians</a>
-                            <a class="footer-a" href="#">Datacenter Field Support</a>
-                        </main>
+                        <ul>
+
+                            <li><a class="footer-a" href="#">End-User IT Support</a></li>
+                            <li><a class="footer-a" href="#">Global Field Technicians</a></li>
+                            <li><a class="footer-a" href="#">Datacenter Field Support</a></li>
+                        
+                        </ul>
                     </div>
 
                     <div class="services">
+
                         <header>Managed Service</header>
-                        <main>
-                            <a class="footer-a" href="#">IT Staffing</a>
-                            <a class="footer-a" href="#">Digital Workplace</a>
-                            <a class="footer-a" href="#">IT Infrastructure Management</a>
-                        </main>
+                        <ul>
+                            <li><a class="footer-a" href="#">IT Staffing</a></li>
+                            <li><a class="footer-a" href="#">Digital Workplace</a></li>
+                            <li><a class="footer-a" href="#">IT Infrastructure Management</a></li>
+                        </ul>
+
                     </div>
 
                     <div class="contact">
+
                         <header>Contact</header>
-                        <main>
-                            <a class="footer-a" href="#">About Us</a>
-                            <a class="footer-a" href="#">Contact</a>
-                            <a class="footer-a" href="#">Privacy statement</a>
-                            <a class="footer-a" href="#">Terms & Conditions</a>
-                        </main>
+                        <ul>
+                            <li><a class="footer-a" href="#">About Us</a></li>
+                            <li><a class="footer-a" href="#">Contact</a></li>
+                            <li><a class="footer-a" href="#">Privacy statement</a></li>
+                            <li>]<a class="footer-a" href="#">Terms & Conditions</a></li>
+                        </ul>
+
                     </div>
 
                     <div class="connect">
+
                         <header>Connect with us</header>
-                        <main>
-                            <a class="footer-a" href="#">LinkedIn</a>
-                            <a class="footer-a" href="#">Facebook</a>
-                            <a class="footer-a" href="#">Twitter</a>
-                            <a class="footer-a" href="#">YouTube</a>
-                            <a class="footer-a" href="#">Medium</a>
-                        </main>
+                        <ul>
+                            <li><a class="footer-a" href="#">LinkedIn</a></li>
+                            <li><a class="footer-a" href="#">Facebook</a></li>
+                            <li><a class="footer-a" href="#">Twitter</a></li>
+                            <li><a class="footer-a" href="#">YouTube</a></li>
+                            <li><a class="footer-a" href="#">Medium</a></li>
+                        </ul>
+
                     </div>
                 </div>
 
