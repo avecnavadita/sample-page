@@ -2,38 +2,63 @@
     <head>
         <link rel="stylesheet" href="assets/style.css">
         <!-- <script src="assets/script.js"></script> -->
-        <title>IT Staffing</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Titillium+Web&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <title>IT Staffing</title>
+
     </head>
 
     <body>
         <div id="container">
+
             <header>
-                <div id="heading">
-                    <img src="assets/kompitech.jpg">
-                    <h3>KompiTech</h3>
+                
+                <div class="header">
+
+                    <div id="heading">
+                        <img src="assets/kompitech.jpg">
+                        <h3>  KompiTech</h3>
+                    </div>
+
+                    <nav id='menu'>
+
+                        <ul> 
+
+                            <li>
+                                <a class='dropdown-arrow' href='#'>Ad-Hoc Support</a>
+
+                                <ul class='sub-menus'>
+                                    <li><a href="#overview">Overview</a></li>
+                                    <li><a href="#g-f-e">Global Field Engineers</a></li>
+                                    <li><a href="#e-u-it-s">End-User IT Support</a></li>
+                                    <li><a href="#d-i-f-s">Datacenter Infrastructure Field Support</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                <a class='dropdown-arrow' href='#'>Managed Services</a>
+
+                                <ul class='sub-menus'>
+
+                                    <li><a href="#it-s">IT Staffing</a></li>
+                                    <li><a href="#d-w">Digital Workplace</a></li>
+                                    <li><a href="#it-i-m">IT Infrastructure Management</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a class='dropdown' href='#'>Vendors Management</a></li>
+
+                        </ul>
+
+                    </nav>
+
                 </div>
 
-                <nav id='menu'>
-                    <ul> 
-                        <li><a class='dropdown-arrow' href='#'>Ad-Hoc Support</a>
-                            <ul class='sub-menus'>
-                                <li><a href="#overview">Overview</a></li>
-                                <li><a href="#g-f-e">Global Field Engineers</a></li>
-                                <li><a href="#e-u-it-s">End-User IT Support</a></li>
-                                <li><a href="#d-i-f-s">Datacenter Infrastructure Field Support</a></li>
-                            </ul>
-                        </li>
-                        <li><a class='dropdown-arrow' href='#'>Managed Services</a>
-                            <ul class='sub-menus'>
-                                <li><a href="#it-s">IT Staffing</a></li>
-                                <li><a href="#d-w">Digital Workplace</a></li>
-                                <li><a href="#it-i-m">IT Infrastructure Management</a></li>
-                            </ul>
-                        </li>
-                        <li><a class='dropdown' href='#'>Vendors Management</a></li>
-                    </ul>
-                </nav>
             </header>
 
             <main>
@@ -77,7 +102,8 @@
                             The short-term IT staffing offers the flexibility to extend your IT team at the speed of your business by supplementing existing staff to fluctuate on demand. Resources can be activated for short-term or long-term projects that usually cover between 8 – 40 hours per week.
                         </p>
                         
-                        <button>REQUEST SERVICE
+                        <button>
+                            <span class="request-service">REQUEST SERVICE</span>
                             <span class="material-icons">
                                 arrow_right_alt
                             </span>
@@ -95,7 +121,7 @@
                             With globalization and today’s challenging business environment, our remote staffing service provides customers with their required technical expertise in easy-to-use packages to match their budget on an hourly or fixed contractual basis.
                         </p>
                         
-                        <button>REQUEST SERVICE
+                        <button><span class="request-service">REQUEST SERVICE</span>
                             <span class="material-icons">
                                 arrow_right_alt
                             </span>
@@ -113,7 +139,7 @@
                             Tap into the pool of well-qualified field service technicians with a KompiTech partner network of thousands of field service engineers globally. Our end-to-end blockchain platform guarantees transparent, full-service delivery to customers at any time.
                         </p>
                         
-                        <button>REQUEST SERVICE
+                        <button><span class="request-service">REQUEST SERVICE</span>
                             <span class="material-icons">
                                 arrow_right_alt
                             </span>
@@ -131,7 +157,7 @@
                             KompiTech is one of the early adopters and pioneers in enterprise blockchain development. We are a <span>Hyperledger Certified Service Provider (HCSP)</span> helping customers harness the power of blockchain to bring innovation to their industries. Our team of certified blockchain experts will help to quickly take your blockchain journey from ideas to real-life production solutions within weeks or months.
                         </p>
                         
-                        <button>REQUEST SERVICE
+                        <button><span class="request-service">REQUEST SERVICE</span>
                             <span class="material-icons">
                                 arrow_right_alt
                             </span>
@@ -252,7 +278,7 @@
                 </article>
 
                 <article id="b-d">
-                    <main class="main-intro">
+                    <main class="main-intro2">
                         <div id="points">
                             <ul>
                                 <li>You'll gain access to BLiTS-Eco pool of expertly trained IT professionals</li>
@@ -272,10 +298,12 @@
                                 Try out our IT Staffing Services
                             </header>
                             <main>
-                                <p class="big-text">Custom Pricing</p>
+                                <p class="big-text"><b>Custom Pricing</b></p>                                
+                            </main>
+                            <footer>
                                 <button>REQUEST CONSULTATION</button>
                                 <p class="light-text">Initial consultations are free</p>
-                            </main>
+                            </footer>
                         </div>
                     </main>
                 </article>
@@ -283,51 +311,63 @@
 
             <footer>
                 <div class="main-divs">
+
                     <div class="Platform">
+
                         <header>Platform</header>
-                        <main>
-                            <a class="footer-a" href="#">Pricing</a>
-                            <a class="footer-a" href="#">Free Trial</a>
-                        </main>
+                        <ul>
+                            <li><a class="footer-a" href="#">Pricing</a></li>
+                            <li><a class="footer-a" href="#">Free Trial</a></li>
+                        </ul>
+
                     </div>
 
                     <div class="support">
+
                         <header>Ad-Hoc Support</header>
-                        <main>
-                            <a class="footer-a" href="#">End-User IT Support</a>
-                            <a class="footer-a" href="#">Global Field Technicians</a>
-                            <a class="footer-a" href="#">Datacenter Field Support</a>
-                        </main>
+                        <ul>
+
+                            <li><a class="footer-a" href="#">End-User IT Support</a></li>
+                            <li><a class="footer-a" href="#">Global Field Technicians</a></li>
+                            <li><a class="footer-a" href="#">Datacenter Field Support</a></li>
+                        
+                        </ul>
                     </div>
 
                     <div class="services">
+
                         <header>Managed Service</header>
-                        <main>
-                            <a class="footer-a" href="#">IT Staffing</a>
-                            <a class="footer-a" href="#">Digital Workplace</a>
-                            <a class="footer-a" href="#">IT Infrastructure Management</a>
-                        </main>
+                        <ul>
+                            <li><a class="footer-a" href="#">IT Staffing</a></li>
+                            <li><a class="footer-a" href="#">Digital Workplace</a></li>
+                            <li><a class="footer-a" href="#">IT Infrastructure Management</a></li>
+                        </ul>
+
                     </div>
 
                     <div class="contact">
+
                         <header>Contact</header>
-                        <main>
-                            <a class="footer-a" href="#">About Us</a>
-                            <a class="footer-a" href="#">Contact</a>
-                            <a class="footer-a" href="#">Privacy statement</a>
-                            <a class="footer-a" href="#">Terms & Conditions</a>
-                        </main>
+                        <ul>
+                            <li><a class="footer-a" href="#">About Us</a></li>
+                            <li><a class="footer-a" href="#">Contact</a></li>
+                            <li><a class="footer-a" href="#">Privacy statement</a></li>
+                            <li>]<a class="footer-a" href="#">Terms & Conditions</a></li>
+                        </ul>
+
                     </div>
 
                     <div class="connect">
+
                         <header>Connect with us</header>
-                        <main>
-                            <a class="footer-a" href="#">LinkedIn</a>
-                            <a class="footer-a" href="#">Facebook</a>
-                            <a class="footer-a" href="#">Twitter</a>
-                            <a class="footer-a" href="#">YouTube</a>
-                            <a class="footer-a" href="#">Medium</a>
-                        </main>
+                        <ul>
+                            <li><a class="footer-a" href="#">LinkedIn</a></li>
+                            <li><a class="footer-a" href="#">Facebook</a></li>
+                            <li><a class="footer-a" href="#">Twitter</a></li>
+                            <li><a class="footer-a" href="#">YouTube</a></li>
+                            <li><a class="footer-a" href="#">Medium</a></li>
+                        </ul>
+
                     </div>
                 </div>
 

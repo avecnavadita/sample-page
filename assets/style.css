@@ -1,116 +1,155 @@
-nav {
-    background:#5085ab;
-    padding: 1px 10px;
-    width: 100%;
-    opacity: 90%;
+h1 {
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
-/* Menu Bar CSS */
-#menu {
-	background: #0099CC;
-	color: #FFF;
-	height: 45px;
-	padding-left: 18px;
-	/* border-radius: 10px; */
+h2 {
+    font-size: 33px;
+    font-family: 'Poppins', sans-serif;
 }
-#menu ul, #menu li {
-	margin: 0 auto;
-	padding: 0;
-	list-style: none
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    margin-top: 2px;
+    color: black;
 }
-#menu ul {
-	width: 100%;
+
+img {
+    height: 37px;
+    padding: 0px 10px;
 }
-#menu li {
-	float: left;
-	display: inline;
-	position: relative;
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
 }
+
+main.main-intro button {
+    display: flex;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+main.main-intro2 li {
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.big-box {
+    width: 350px;
+    height: 500px;
+    box-shadow: 1px 3px 10px 13px #e9e9e98f;
+}
+
+article {
+    margin-bottom: 70px;
+}
+
+.big-box header {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: #0000003b;
+}
+
+.big-box main {
+    padding: 20px;
+}
+
+p.big-text {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    height: 115px;
+    line-height: 120px;
+}
+
+.big-box button {
+    padding: 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.big-box footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.main-intro2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#points {
+    width: 650px;
+}
+
+div#heading {
+    display: flex;
+    margin-right: 400px;
+}
+
+.header {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 105px;
+}
+
 #menu a {
-	display: block;
-	line-height: 45px;
-	padding: 0 14px;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 16px;
+    color: black;
+    background: white;
+    font-size: 15px;
 }
-#menu a.dropdown-arrow:after {
-	content: "\25BE";
-	margin-left: 5px;
+
+nav#menu {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
 }
+
 #menu li a:hover {
-	color: #0099CC;
-	background: #F2F2F2;
-}
-#menu input {
-	display: none;
-	margin: 0;
-	padding: 0;
-	height: 45px;
-	width: 100%;
-	opacity: 0;
-	cursor: pointer
-}
-#menu label {
-	display: none;
-	line-height: 45px;
-	text-align: center;
-	position: absolute;
-	left: 35px
-}
-#menu label:before {
-	font-size: 1.6em;
-	content: "\2261"; 
-	margin-left: 20px;
-}
-#menu ul.sub-menus{
-	height: auto;
-	overflow: hidden;
-	width: 170px;
-	background: #444444;
-	position: absolute;
-	z-index: 99;
-	display: none;
-}
-#menu ul.sub-menus li {
-	display: block;
-	width: 100%;
-}
-#menu ul.sub-menus a {
-	color: #FFFFFF;
-	font-size: 16px;
-}
-#menu li:hover ul.sub-menus {
-	display: block
-}
-#menu ul.sub-menus a:hover{
-	background: #F2F2F2;
-	color: #444444;
-}
-@media screen and (max-width: 800px){
-	#menu {position:relative}
-	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
-	#menu ul.sub-menus {width:100%;position:static;}
-	#menu ul.sub-menus a {padding-left:30px;}
-	#menu li {display:block;float:none;width:auto;}
-	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
-	#menu input {z-index:4}
-	#menu input:checked + label {color:white}
-	#menu input:checked + label:before {content:"\00d7"}
-	#menu input:checked ~ ul {display:block}
+    color: black;
 }
 
-/* .image:before {
-    text-shadow: 0 0 30px rgb(0 0 0 / 10%);
+footer {
+    background: black;
+    height: 400px;
+    padding: 70px;
+}
+
+header {
     color: #fff;
-    content: "\0052";
-    pointer-events: none;
-    text-rendering: auto;
-    font: normal normal normal 100px/1 icons;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-} */
+}
 
+.main-divs {
+    display: flex;
+}
+
+footer ul {
+    margin: 4px 20px;
+    list-style-type: none;
+}
+
+footer li {
+    margin: 20px 0px;
+}
+
+footer header {
+    margin: 0px 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a.footer-a {
+    color: #ababab;
+    font-family: 'Montserrat', sans-serif;
+}
