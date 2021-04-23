@@ -27,6 +27,10 @@ h3 {
     color: black;
 }
 
+nav#menu {
+    font-family: 'Montserrat', sans-serif;
+}
+
 footer.main {
     background: black;
     height: 400px;
