@@ -1,5 +1,5 @@
 .main-menu {margin:0;}
-#menu .main-menu > li {padding-bottom: 15px;}
+#menu .main-menu > li {padding-bottom: 25px;}
 #menu .main-menu > li:hover {border-bottom: 1px solid #f8cd13;}
 #menu {
 	color: #FFF;
@@ -8,40 +8,14 @@
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 }
-
 #menu a {
-	display: block;
-	line-height: 45px;
 	padding: 0 14px;
 	text-decoration: none;
     color: black;
 }
-#menu a.dropdown-arrow:after {
-	content: "\25BE";
-	margin-left: 5px;
-}
-
-#menu input {
-	display: none;
-	margin: 0;
+#menu .sub-menu a {
 	padding: 0;
-	height: 45px;
-	width: 100%;
-	opacity: 0;
-	cursor: pointer
-}
-#menu label {
-	display: none;
-	line-height: 45px;
-	text-align: center;
-	position: absolute;
-	left: 35px
-}
-#menu label:before {
-	font-size: 1.6em;
-	content: "\2261"; 
-	margin-left: 20px;
-}
+}	
 #menu ul.sub-menu{
 	height: auto;
 	overflow: hidden;
@@ -50,45 +24,27 @@
 	z-index: 99;
 	display: none;
 	background: white;
-	margin-top: 15px;
+	margin-top: 26px;
 	box-shadow: 1px 0px 6px 0px #00000045;
+	padding: 10px;
 }
- #menu ul.sub-menu a {
+#menu ul.sub-menu a {
 	color: #000;
 	font-size: 16px;
 }
 #menu ul.sub-menu li {
-	display: block;
-	width: 100%;
+	padding: 10px;
+	padding-top:0;
 }
-
 #menu li:hover ul.sub-menu {
 	display: block
 }
 #menu ul.sub-menu a:hover{
 	border-bottom: 1px solid #f8cd13;
 }
-/*@media screen and (max-width: 800px){
-	#menu {position:relative}
-	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
-	#menu ul.sub-menu {width:100%;position:static;}
-	#menu ul.sub-menu a {padding-left:30px;}
-	#menu li {display:block;float:none;width:auto;}
-	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
-	#menu input {z-index:4}
-	#menu input:checked + label {color:white}
-	#menu input:checked + label:before {content:"\00d7"}
-	#menu input:checked ~ ul {display:block}
-}
-*/
 nav#menu ul {
     display: flex;
 } 
-
-a.dropdown-arrow:hover {
-    border-bottom: 1px solid #f8cd13;
-}
-
 a.menu-item {
     text-decoration: none;
     font-size: 16px;
@@ -96,11 +52,9 @@ a.menu-item {
     font-family: 'Poppins', sans-serif;
     color: black;
 }
-
 li.long-text {
     margin-top: 18px;
 }
-
 div#top-menu ul {
     padding: 0;
 }
@@ -110,28 +64,7 @@ div#top-menu ul {
     margin: 2px 5px;
     padding: 5px 10px;
 }
-
-ul.links {
-    list-style: none;
-}
-
-a.dark-mode {
-    color: black;
-    font-weight: bold;
-    /* letter-spacing: 1px; */
-}
-
 a.menu-item:hover {
     border-bottom: 1px solid #f8cd13;
     color: #F8CD14;
-}
-  
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
-.sticky + .content {
-	padding-top: 102px;
 }
