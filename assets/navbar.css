@@ -49,8 +49,9 @@
 	position: absolute;
 	z-index: 99;
 	display: none;
-	box-shadow: 0 0 20px 0px #f1efef;
+	background: white;
 	margin-top: 15px;
+	box-shadow: 1px 0px 6px 0px #00000045;
 }
  #menu ul.sub-menu a {
 	color: #000;
@@ -83,3 +84,54 @@
 nav#menu ul {
     display: flex;
 } 
+
+a.dropdown-arrow:hover {
+    border-bottom: 1px solid #f8cd13;
+}
+
+a.menu-item {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+li.long-text {
+    margin-top: 18px;
+}
+
+div#top-menu ul {
+    padding: 0;
+}
+
+#top-menu li {
+    display: inline;
+    margin: 2px 5px;
+    padding: 5px 10px;
+}
+
+ul.links {
+    list-style: none;
+}
+
+a.dark-mode {
+    color: black;
+    font-weight: bold;
+    /* letter-spacing: 1px; */
+}
+
+a.menu-item:hover {
+    border-bottom: 1px solid #f8cd13;
+    color: #F8CD14;
+}
+  
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 102px;
+}

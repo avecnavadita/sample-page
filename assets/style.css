@@ -1,23 +1,30 @@
-div#container {
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.twoMains {
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .main .header {
     display: flex;
     justify-content: space-between;
+    padding: 25px;
 }
 
 h1 {
     font-size: 55px;
-    font-family: 'Poppins', sans-serif;
+    
     text-align: center;
     letter-spacing: 2px;
 }
 
 h2 {
     font-size: 33px;
-    font-family: 'Poppins', sans-serif;
 }
 
 h3 {
@@ -33,7 +40,6 @@ nav#menu {
 
 footer.main {
     background: black;
-    height: 400px;
     padding: 70px;
 }
 
@@ -46,48 +52,54 @@ p {
     text-align: justify;
     font-size: 20px;
     line-height: 30px;
-    font-family: 'Poppins', sans-serif;
 }
 
 main.main-intro button {
     display: flex;
     align-items: center;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
     background: #ffe800ba;
+    padding: 10px;
+    font-size: 19px;
+    letter-spacing: 2px;
 }
 
-main.main-intro2 li {
-    font-family: 'Poppins', sans-serif;
-    line-height: 37px;
+/* pricing box CSS  */
+
+.pricing-box {
+    max-width: 380px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+    margin-left: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+p.big-text {
+    text-align: center;
+    line-height: 70px;
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+p.light-text {
     font-size: 17px;
-    text-align: justify;
 }
 
-.big-box {
-    width: 350px;
-    height: 500px;
-    box-shadow: 1px 3px 10px 13px #e9e9e98f;
-}
-
-article {
-    margin-bottom: 70px;
-}
-
-.big-box header {
+.pricing-box header {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
     padding: 20px;
-    font-family: 'Poppins', sans-serif;
     background: #0000003b;
 }
 
-.big-box main {
+.pricing-box main {
     padding: 20px;
 }
 
-p.big-text {
+p.pricing-text {
     font-size: 40px;
     font-weight: bolder;
     text-align: center;
@@ -95,19 +107,25 @@ p.big-text {
     line-height: 120px;
 }
 
-.big-box button {
+.pricing-box button {
     padding: 15px;
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-size: 16px;
     background: #faee4499;
+    font-family: 'Poppins', sans-serif;
 }
 
-.big-box footer {
+.pricing-box footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
 }
 
+/* end of pricing box CSS  */
+
+article {
+    margin-bottom: 70px;
+}
 main.main-intro2 {
     display: flex;
     justify-content: space-evenly;
@@ -149,6 +167,8 @@ footer.main header {
 a.footer-a {
     color: #ababab;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
 }
 
 article#two-headers header p {
@@ -164,36 +184,34 @@ article#two-headers {
     color: #ff9800;
 }
 
+#points ul {
+    list-style: none;
+    padding:0;
+}
+
+main.main-intro2 li {
+    line-height: 25px;
+    font-size: 17px;
+    text-align: justify;
+    position: relative;
+    padding-left: 23px;
+    margin: 7px 0;
+}
+
 #points li::before {
-    content: ' ✔';
-    padding-right:10px;
-    color:green;
+    color: #229b2b;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    content: "✔";
+    pointer-events: none;
+    text-rendering: auto;
 }
 
 article#b-d p span {
     color: blue;
 }
 
-td .material-icons {
-    font-size: 20px;
-}
-td.full-border {
-    border:1px solid rgb(180, 182, 180);
-}
-td.no-right-border {
-    border:1px solid  rgb(180, 182, 180);
-    border-right: 0;
-}
-td.no-left-border {
-    border:1px solid  rgb(180, 182, 180);
-    border-left: 0;
-}
-d {
-    height: 65px;
-}
-th {
-    height: 75px;
-}
 span.material-icons.grey, span.material-icons.error {
     color: #8080806e;
 }
@@ -203,6 +221,9 @@ span.error {
 span.material-icons.close {
     color: #ff1100a8;
 }
+
+
+/* compare table CSS */
 
 .table-list {
     display: flex;
@@ -219,12 +240,37 @@ table span {
     width: 29px;
 }
 
-.td-radius {border-radius: 10% 10% 0 0;}
+td .material-icons {
+    font-size: 20px;
+}
+
+td.full-border {
+    border:1px solid rgb(180, 182, 180);
+}
+
+td.no-right-border {
+    border:1px solid  rgb(180, 182, 180);
+    border-right: 0;
+}
+
+td.no-left-border {
+    border:1px solid  rgb(180, 182, 180);
+    border-left: 0;
+}
+
+th {
+    height: 75px;
+}
+
+.td-radius {
+    text-align: center;
+    border: none;
+    border-radius: 25px 25px 0 0;
+}
 
 td span.text {
     margin: 0 15px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -235,10 +281,8 @@ td {
     height: 50px;
 }
 
-
 thead {
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -247,7 +291,7 @@ th.third {
 }
 
 th.second {
-    background: #faee44;
+    background-color: #fbe104;
 }
 
 th.first {
@@ -258,9 +302,7 @@ thead th {
     padding: 10px;
 }
 
-#points ul {
-    list-style: none;
-}
+/* end of table CSS  */
 
 span.material-icons.done {
     color: #8bc34a;
@@ -268,4 +310,42 @@ span.material-icons.done {
 
 #points li span.material-icons.done {
     color: #8bc34a;
+}
+
+header.main {
+    border-bottom: 1px solid #9e9e9e9c;
+    position: fixed;
+    background: white;
+    width: 100%;
+}
+
+.end p {
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.end-img {
+    width: 150px;
+    height: 100px;
+}
+
+.aside-main {
+    width: 850px;
+}
+
+main.main-intro button:hover {
+    opacity: 60%;
+}
+
+footer.main a:hover {
+    color: white;
+    font-weight: lighter;
 }
