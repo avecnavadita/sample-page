@@ -1,11 +1,20 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
+article h2{
+    scroll-margin-top: 1.5em;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-div#container {
+main.main-part {
     width: 1200px;
     margin: 0 auto;
 }
+
 .body-wrapper-section {
     display: flex;
 }
@@ -103,6 +112,11 @@ p.pricing-text {
     line-height: 120px;
 }
 
+.pricing-box button:hover {
+    transform: scale(1.1);
+    background: #ffeb3bdb;
+}
+
 .pricing-box button {
     margin: 25px 0;
     font-size: 18px;
@@ -124,6 +138,18 @@ p.pricing-text {
     width: 100%;
     display: block;
     margin-right: 25px;
+}
+
+.aside_wrapper_fixed {
+    position: fixed;
+    max-width: 300px;
+    top: 60px;
+    transition: top 2s;
+}
+
+nav.aside_wrapper_auto {
+    position: relative;
+    max-width: 300px;
 }
 
 /* end of pricing box CSS  */
@@ -349,5 +375,5 @@ a.footer-a {
     color: #ababab;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    letter-spacing: 1px;
 }
+

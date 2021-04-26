@@ -12,7 +12,7 @@
 
     </head>
 
-    <body>
+    <body onscroll="bodyScroll()">
 
             <header class="main">
                 
@@ -77,7 +77,7 @@
                     <div class="body-wrapper-section">
 
                         <div class="body-aside">
-                            <nav class="navbarPartTwo" id="myHeader">
+                            <nav class="nav_wrapper">
                                 <ul class="aside-nav__links">
                                     <li><a class="menu-item dark-mode" href="#">IT Staffing</a></li>
                                     <li><a class="menu-item" href="#s-o">Overview</a></li>
@@ -379,19 +379,30 @@
             </footer>
         </div>
 
-        <!-- <script>
-            window.onscroll = function() {myFunction()};
-            
-            var nav = document.getElementById("myHeader");
-            var sticky =nav.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset > sticky) {
-               nav.classList.add("sticky");
-              } else {
-               nav.classList.remove("sticky");
-              }
+       <script>
+           function bodyScroll(){
+            const body = document.getElementsByTagName('body')[0];
+            var top = body.scrollTop;
+            console.log(top);
+
+            // if top = 165 then position fixed otherwise relative 
+            if(top >= 2090){
+                const el = document.getElementsByClassName('nav_wrapper')[0];
+                el.classList.add('aside_wrapper_auto');
+                el.classList.remove('aside_wrapper_fixed');
+                console.log('relative');
             }
-        </script> -->
+            else if(top >= 165){
+                const el = document.getElementsByClassName('nav_wrapper')[0];
+                el.classList.add('aside_wrapper_fixed');
+                el.classList.remove('aside_wrapper_auto');
+            }            
+            else{
+                const el = document.getElementsByClassName('nav_wrapper')[0];
+                el.classList.add('aside_wrapper_auto');
+                el.classList.remove('aside_wrapper_fixed');
+            }
+           }          
+       </script>
     </body>
 </html>
