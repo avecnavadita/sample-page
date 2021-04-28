@@ -383,14 +383,14 @@
            function bodyScroll(){
             const body = document.getElementsByTagName('body')[0];
             var top = body.scrollTop;
-            console.log(top);
+            // console.log(top);
 
             // if top = 165 then position fixed otherwise relative 
-            if(top >= 2090){
+            if(top >= 2060){
                 const el = document.getElementsByClassName('nav_wrapper')[0];
                 el.classList.add('aside_wrapper_auto');
                 el.classList.remove('aside_wrapper_fixed');
-                console.log('relative');
+                // console.log('body touches aside menu');
             }
             else if(top >= 165){
                 const el = document.getElementsByClassName('nav_wrapper')[0];
