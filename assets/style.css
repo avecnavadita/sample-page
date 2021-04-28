@@ -2,6 +2,10 @@
     scroll-behavior: smooth;
 } */
 
+body {
+    overflow:auto;
+}
+
 article h2{
     scroll-margin-top: 1.5em;
 }
