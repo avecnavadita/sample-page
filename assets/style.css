@@ -200,6 +200,11 @@ article#two-headers {
     padding:0;
 }
 
+/*make sure header is not blocked by scrolling when link is clicked in aside menu*/
+.main-body article {
+    scroll-margin-top: 5em;
+}
+
 main.main-intro2 li {
     line-height: 25px;
     font-size: 17px;
