@@ -93,6 +93,7 @@ p.big-text {
 }
 
 p.light-text {
+    margin-bottom: 50px;
     font-size: 17px;
     text-align: center;
 }
@@ -118,8 +119,10 @@ p.pricing-text {
 }
 
 .pricing-box button:hover {
-    transform: scale(1.1);
-    background: #ffeb3bdb;
+    transform: scale(1.05);
+    cursor:pointer;
+    /* transition: transform slow; */
+    /* background: #ffeb3bdb; */
 }
 
 .pricing-box button {
@@ -129,6 +132,7 @@ p.pricing-text {
     font-family: 'Poppins', sans-serif;
     padding: 15px;
     font-weight: 800;
+    transition: transform .5s ease-in-out;
 }
 
 .pricing-box footer {
